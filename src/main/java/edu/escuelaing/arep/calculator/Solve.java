@@ -1,11 +1,21 @@
 package edu.escuelaing.arep.calculator;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Clase que implementa la logica del servidor
+ */
 public class Solve {
 
+    /**
+     *
+     * @param data los datos a ser procesados
+     * @return un json en formato string
+     */
     public static String calculate(String data){
         List<Double> nums = new ArrayList<Double>();
         List<String> doubles = Arrays.asList(data.split(","));
@@ -22,6 +32,7 @@ public class Solve {
         List<Double> result= bubblesorter.bubbleSort(doubles1);
 
         String json ="{\"List\":"+result.toString()+",\"avg\":"+avg+",\"sum\":"+sum+"}";
+
         return json;
 
     }

@@ -9,8 +9,12 @@ import static spark.Spark.*;
  * Web Spark app class
  * @author Juan Camilo Angel Hernandez
  */
-public class SparkWebApp
-{
+public class SparkWebApp {
+
+    /**
+     * servicios ofrecidos por el servidor
+     * @param args
+     */
     public static void main(String[] args) {
         port(getPort());
         staticFiles.location("/views");
@@ -32,6 +36,10 @@ public class SparkWebApp
         });
     }
 
+    /**
+     * retorna el puerto a ser utilizado
+     * @return el puerto a ser utilizado
+     */
     static int getPort() {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
