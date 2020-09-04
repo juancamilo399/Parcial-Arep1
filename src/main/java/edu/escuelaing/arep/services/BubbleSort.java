@@ -1,4 +1,4 @@
-package edu.escuelaing.arep.calculator;
+package edu.escuelaing.arep.services;
 
 import java.util.Arrays;
 import java.util.List;

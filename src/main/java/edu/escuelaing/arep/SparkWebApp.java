@@ -1,7 +1,7 @@
 package edu.escuelaing.arep;
 
 import com.google.gson.Gson;
-import edu.escuelaing.arep.calculator.Solve;
+import edu.escuelaing.arep.services.Solve;
 
 import static spark.Spark.*;
 
