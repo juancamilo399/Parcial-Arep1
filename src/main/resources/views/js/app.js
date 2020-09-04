@@ -7,7 +7,7 @@ button.addEventListener('click', function () {
     var datos = data.split(",");
 
     console.log(datos);
-    axios.post('http://localhost:4567/solve/sort/', data)
+    axios.post('https://gentle-beyond-63920.herokuapp.com/solve/sort/', data)
         //axios.post('http://localhost:4567/calculate', data)
         .then(res => {
             console.log("res")

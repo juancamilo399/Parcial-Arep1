@@ -5,11 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Solve {
-    /**
-     * Método encargado de llamer el ordenamiento de los datos
-     * @param data datos a ordenar y sumar
-     * @return Json con la lista ordenada y la suma de los elementos
-     */
+
     public static String calculate(String data){
         List<Double> nums = new ArrayList<Double>();
         List<String> doubles = Arrays.asList(data.split(","));
